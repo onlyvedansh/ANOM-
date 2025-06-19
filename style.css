@@ -1,0 +1,83 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body
+{
+    padding: 0;
+    background-color: white;
+}
+#navbar
+{
+    margin-top: 50px;
+  transition: margin 0.3s ease;
+  opacity: 50%;
+position: fixed;
+background-color: black;
+height: 100px;
+width: 100%;
+box-shadow: 0px 50px 100px 0px;
+ z-index: 1;
+}
+
+
+
+nav ul
+{   padding-left: 40%;
+   padding-top: 40px;
+    list-style: none;
+    display: flex;
+    gap: 55px;
+}
+
+ #no-pad
+{
+    position: absolute;
+    margin-left: -35%;
+}
+
+nav a
+{
+   
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.outer-class
+{
+    border: 1px solid black;
+    height: 10000px;
+    width: 1500px;
+    margin: 0;
+
+}
+
+
+
+.outer-ul
+{
+   margin: 0px 0px; 
+   gap: 100px;
+   list-style: none;
+}
+.wrapper-slider
+{
+    
+    border: 1px solid black;
+    position: absolute;
+    height: 900px;
+    width: 1518px;
+    background-color: rgba(250, 235, 215, 0.633);
+}
+
+
+ img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
