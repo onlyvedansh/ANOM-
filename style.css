@@ -84,13 +84,13 @@ nav a
 
 footer
 {
-    background-color: black;
-    
-  
-  opacity: 50%;
-position: fixed;
+background-color: black;
+margin-top: 9700px;
+position:absolute;
+opacity: 80%;
+color: aliceblue;
 
-height: 100px;
+height: 300px;
 width: 100%;
 
  z-index: 1;
