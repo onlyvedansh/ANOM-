@@ -81,3 +81,17 @@ nav a
     object-fit: contain;
     filter: grayscale(100%);
 }
+
+footer
+{
+    background-color: black;
+    
+  
+  opacity: 50%;
+position: fixed;
+
+height: 100px;
+width: 100%;
+
+ z-index: 1;
+}
