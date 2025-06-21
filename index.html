@@ -3,7 +3,6 @@
 <head>
 
 <script>
-
 window.addEventListener("scroll", function () {
   const nav = document.getElementById("navbar");
   if (window.scrollY > 20) {
@@ -12,7 +11,6 @@ window.addEventListener("scroll", function () {
     nav.style.marginTop = "50px";
   }
 });
-
 </script>
 
 <link rel="stylesheet" href="style.css">
@@ -34,17 +32,18 @@ window.addEventListener("scroll", function () {
 
     <div class="outer-class">   
     <ul class="outer-ul">
-        <li> <div class="wrapper-slider">
-                <div class="images">
-                  <div class="slide">
-                    <img src="slider/1.jpg"> 
-                    <p class="caption">Made by me</p>       
-                </div>
-            </div>
+      
+        <li> 
+                            <img id="slider" src="slider/1.jpg" alt="slider image"> 
+                            <p class="caption"  id="caption">The Ugosalvia Art<br> 
+                              Made in and by name of maker
+                              <br>
+                              With love
+                            </p>     
         </li>
 
         
-     <li></li>
+     <li id="#"></li>
 
 
      <li></li>
@@ -60,7 +59,38 @@ window.addEventListener("scroll", function () {
 
 </div>
 
+<script>
+   const images = [
+      { src: "slider/1.jpg", text: "The Ugosalvia Art<br>Made in and by name of maker<br>With love" },
+      { src: "slider/2.jpg", text: "Nature’s Wonder<br>By John Doe<br>Peacefully made" },
+      { src: "slider/3.jpg", text: "Timeless Beauty<br>By Jane Smith<br>With passion"                }, 
+      {  src: "slider/4.jpg", text: "The Ugosalvia Art<br>Made in and by name of maker<br>With love" },
+      {  src: "slider/5.jpg", text: "Nature’s Wonder<br>By John Doe<br>Peacefully made"},
+      {  src: "slider/6.jpg", text: "Timeless Beauty<br>By Jane Smith<br>With passion"}
+       
+    ];
 
+    let i = 0;
+    const slider = document.getElementById("slider");
+    const caption = document.getElementById("caption");
+
+    setInterval(() => {
+      // Fade out
+      slider.style.opacity = 0;
+      caption.style.opacity = 0;
+
+      setTimeout(() => {
+        // Change image and text after fade out
+        i = (i + 1) % images.length;
+        slider.src = images[i].src;
+        caption.innerHTML = images[i].text;
+
+        // Fade in
+        slider.style.opacity = 1;
+        caption.style.opacity = 1;
+      }, 1000); // matches transition time
+    }, 10000); // change every 4 seconds
+</script>
    
     
 </body>
