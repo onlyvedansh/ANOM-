@@ -51,7 +51,7 @@ nav a
     height: 10000px;
     width: 1500px;
     margin: 0;
-    border: 1px solid black;
+    
 }
 
 
@@ -59,8 +59,10 @@ nav a
 .outer-ul
 {
    margin: 0px 0px; 
-   gap: 100px;
+   gap: 200px;
    list-style: none;
+   display: flex;
+   flex-direction: column;
 }
 
  #slider
@@ -69,6 +71,8 @@ nav a
     opacity: 1;
     transition: opacity 1s ease-in-out;
     filter: grayscale(100%);
+    position: relative;
+    background-color: antiquewhite;
 }
 
 .caption {
@@ -91,7 +95,7 @@ opacity: 80%;
 color: aliceblue;
 height: 300px;
 width: 100%;
- z-index: 1;
+
 }
 
 
@@ -111,3 +115,150 @@ ul li{
 }
 }
 
+ #artist-section .artist-wrapper
+{
+    background-color: black;
+    opacity: 100%;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    
+    color: black;
+    
+   
+}
+#artist-section .artist-wrapper ul 
+{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+    margin-left: 200px;
+
+}
+
+#profiles li div 
+{
+    
+    height: 500px;
+    width: 200px;
+    position: relative;
+    
+    
+}
+#profiles li div .artist-names{
+    color: aliceblue;
+    padding-left: 50px;
+    padding-top: 10px;
+    
+}
+
+
+#profiles li div
+{
+
+ border: 2px solid transparent ;
+ 
+}
+
+
+#profiles div:hover
+{
+   transition: .8s; 
+  border: 2px solid white;
+
+    
+}
+#profiles div img:hover
+{
+    transition: 1s;
+    opacity: 50%;
+}
+
+#profiles div .caption2
+{
+    color: aliceblue;
+   margin-top: -150px;
+   margin-left: 20px;
+   font-size: 25px;
+}
+#profiles li div img
+{
+    position: relative;
+    object-fit: fill;
+    display: block;
+    filter:grayscale();
+}
+#profiles li div #two
+{
+   
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#profiles li div #four
+{
+    
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#profiles li div #three
+{
+    
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#profiles li div #one
+{
+    
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#highlights
+{
+    margin-left: 80px;
+    margin-top: 100px;
+}
+#highlight
+{
+
+    height: 700px;
+    width: 1350px;
+    overflow: hidden;
+    position: relative;
+}
+#highlight-image
+{
+    object-position: 0px -300px;
+    object-fit: fill;
+   filter: grayscale(.5);
+    
+}
+
+#highlight-caption
+{
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-left: 150px;
+     z-index: 1;
+    position: absolute;
+    font-size: 15px;
+    font-family: Georgia ;
+    fon
+}
+#highlight-caption a
+{
+    color: aliceblue;
+    text-decoration: none;
+}
+#highlight-caption span
+{
+    font-family:Helvetica ;
+    font-size: 40px;
+}
