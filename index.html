@@ -5,12 +5,13 @@
 <script>
 window.addEventListener("scroll", function () {
   const nav = document.getElementById("navbar");
-  if (window.scrollY > 20) {
-    nav.style.marginTop = "0px";
-    nav.style.opacity="100%";
+
+  if (window.scrollY > 400) {
+    nav.style.top = "0px";       // 👈 stick to top
+    nav.style.opacity = "1";     // full opacity
   } else {
-    nav.style.marginTop = "50px";
-    nav.style.opacity="50%";
+    nav.style.top = "40px";      // 👈 back to initial position
+    nav.style.opacity = "0.6";   // lower opacity
   }
 });
 
@@ -79,7 +80,7 @@ window.addEventListener("scroll", function () {
         <ul id="collections">
           <li><div class="col1 "><img src="slider/4.jpg" alt="" id="one"></div></li>
           <li><div class="col1 "><img src="slider/5.jpg" alt="two"></div></li>
-          <li><div class="col1 "><img src="slider/10.jpg" alt="three"></div></li>
+          <li><div class="col1 " id="col2"><img src="slider/10.jpg" alt="three"></div></li>
         </ul>
       </section>
      </li>

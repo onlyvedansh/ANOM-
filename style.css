@@ -9,10 +9,11 @@ body
 {
 padding: 0;
 background-color: white;
-width: 1521px;
+width:100%;
  height: 100%;
   display: flex;
   flex-direction: column;
+
 
 }
 
@@ -20,8 +21,8 @@ width: 1521px;
 
 #navbar
 {
-margin-top: 50px;
-transition: margin 0.3s ease;
+top: 40px;
+transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out;
 opacity: 60%;
 position: fixed;
 background-color: black;
@@ -58,9 +59,10 @@ nav a
 .outer-class
 {
     height: 6500px;
-    width: 1521px;
+    width: 100%;
     margin: 0;
     position: relative;
+    overflow-x: hidden;
     
 }
 
@@ -131,9 +133,9 @@ width: 100%;
 #artist-section .artist-wrapper ul 
 {
     display: flex;
-    gap: 80px;
+    gap: 100px;
     list-style: none;
-    margin-left: 200px;
+    
 
 }
 
@@ -141,14 +143,14 @@ width: 100%;
 {
     
     height: 500px;
-    width: 200px;
+    width: 300px;
     position: relative;
     
     
 }
 #profiles li div .artist-names{
     color: aliceblue;
-    padding-left: 50px;
+    padding-left: 90px;
     padding-top: 10px;
     
 }
@@ -420,22 +422,144 @@ background-color: rgba(157, 132, 102, 0.248);
 {
   #navbar {
     font-size: 10px;
+    height: 60px;
+    z-index: 100;
+ 
+    
     
   }
   nav ul
   {
-   padding-left: 14%;
- 
+   padding-left: 54%;
+ padding-top: 25px;
     gap: 10px;
   }
   #slider
   {
     width: 480px;
-    height: 890px;
+    height: 896px;
     object-fit: cover;
   }
   .caption
   {
     margin-left: 30px;
   }
+  #artist-section
+  {
+    width: 100%;
+  }
+   #artist-section .artist-wrapper
+{
+    background-color: black;
+    opacity: 100%;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    margin-top: 100px;
+}
+#artist-section .artist-wrapper ul 
+{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    margin-left: 0px;
+
+}
+#profiles div .caption2
+{
+    color: aliceblue;
+   margin-top: -150px;
+   margin-left: 10px;
+   font-size: 25px;
+}
+#profiles li div .artist-names{
+    color: aliceblue;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+#profiles li div 
+{
+    
+    height: 500px;
+    width: 100px;
+    position: relative;
+    
+    
+}
+#highlights
+{
+    margin-left: 10px;
+    margin-top: 100px;
+}
+#highlight
+{
+
+    height: 700px;
+   width: 98%;
+    overflow: hidden;
+    position: relative;
+}
+#highlight-image
+{
+    object-position: -400px -200px;
+    object-fit: fill;
+   filter: grayscale(.5);
+    
+}
+#workshop .col1 
+{
+    
+background-color: rgba(157, 132, 102, 0.248);
+ height: 200px;
+ width: 200px; 
+ position: relative;
+ overflow: hidden;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(20px); /* for Safari */
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+#workshop .col1 img
+{
+ height: 70%;
+ width: 70%;
+ padding-top:30px ;
+ padding-left: 30px; 
+
+}
+#workshop #collections
+{
+    height: 530px;
+    
+        gap: 10px;
+    padding-left: 2px;
+    padding-top: 100px;
+    background: rgba(133, 132, 132, 0.203); /* translucent */   
+}
+#workshop #col2
+{
+    margin-left: -418px;
+    margin-top: 210px;
+}
+#founders
+{
+    width: 95%;
+       margin-left: 10px;  
+}
+#founders p 
+{
+    margin-left: 250px;
+    margin-top: -400px;
+    font-size: 15px;  
+}
+#founders img
+{
+    height: 100%;
+    width: 200px;
+    object-fit:cover;
+    object-position: -200px 0px;
+}
 }
