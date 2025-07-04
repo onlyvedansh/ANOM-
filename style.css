@@ -589,6 +589,12 @@ background-color: rgba(157, 132, 102, 0.248);
     margin-top: -400px;
     font-size: 15px;  
 }
+
+#paytm div
+{
+    margin-left: 60px;
+    width: 30%;
+}
 #founders img
 {
     height: 100%;
