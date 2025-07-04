@@ -518,7 +518,7 @@ background-color: rgba(157, 132, 102, 0.248);
 
 
 
-@media (max-width: 760px) 
+@media (max-width: 260px) 
 {
   #navbar {
     font-size: 10px;
