@@ -539,9 +539,14 @@ background-color: rgba(157, 132, 102, 0.248);
   }
   #artist-section .magicButton
   {
-    margin-left: 310px;
-    margin-top: 25px;
+    margin-left: 275px;
+    margin-top: -50px;
+    
+    color: aliceblue;
+    border: 1px solid white;
+
   }
+  
    #artist-section .artist-wrapper
 {
     background-color: black;
@@ -555,7 +560,7 @@ background-color: rgba(157, 132, 102, 0.248);
 #artist-section .artist-wrapper ul 
 {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     list-style: none;
     margin-left: 7px;
 
@@ -584,7 +589,7 @@ background-color: rgba(157, 132, 102, 0.248);
 {
     
     height: 500px;
-    width: 120px;
+    width: 110px;
     position: relative;
     
     
@@ -596,20 +601,20 @@ background-color: rgba(157, 132, 102, 0.248);
 }
 #highlights .magicButton
 {
-    margin-top: -50px;
-    margin-left: 300px;
+    margin-top: -60px;
+    margin-left: 260px;
 }
 #highlight
 {
 
-    height: 700px;
+    height: 500px;
    width: 98%;
     overflow: hidden;
     position: relative;
 }
 #highlight-image
 {
-    object-position: -400px -200px;
+    object-position: -400px -300px;
     object-fit: fill;
    filter: grayscale(.5);
     
@@ -674,7 +679,7 @@ background-color: rgba(157, 132, 102, 0.248);
 }
 #instagram .magicButton
 {
-    margin-left: 310px;
+    margin-left: 270px;
 }
 #paytm #pay
 {
