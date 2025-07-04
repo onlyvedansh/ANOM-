@@ -518,7 +518,7 @@ background-color: rgba(157, 132, 102, 0.248);
 
 
 
-@media (max-width: 260px) 
+@media (max-width: 760px) 
 {
   #navbar {
     font-size: 10px;
@@ -557,8 +557,9 @@ background-color: rgba(157, 132, 102, 0.248);
   }
   #artist-section .magicButton
   {
-    margin-left: 275px;
+   
     margin-top: -50px;
+   margin-left: 250px;
     
     color: aliceblue;
     border: 1px solid white;
@@ -580,9 +581,9 @@ background-color: rgba(157, 132, 102, 0.248);
     display: flex;
     gap: 10px;
     list-style: none;
-    margin-left: 7px;
+    margin-left: 25px;
 
-}
+} 
 #profiles div .caption2
 {
     color: aliceblue;
@@ -607,7 +608,7 @@ background-color: rgba(157, 132, 102, 0.248);
 {
     
     height: 500px;
-    width: 110px;
+    width: 100px;
     position: relative;
     
     
@@ -620,7 +621,7 @@ background-color: rgba(157, 132, 102, 0.248);
 #highlights .magicButton
 {
     margin-top: -60px;
-    margin-left: 260px;
+      margin-left: 250px;
 }
 #highlight
 {
