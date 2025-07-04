@@ -118,10 +118,37 @@ window.addEventListener("scroll", function () {
             Street: cybercity42324
         </section>
       </li>
+
+    
+        <section id="paytm">
+          <a  onclick="startPayment()"><div>
+            Click here to purchase Item <br>
+            Rs: 200
+          </div>
+          </a>
+        </section>
+        <script>
+          function startPayment()
+          {
+            const upiID="vedanshsinghkarki@oksbi";
+            const name ="Vedansh Singh Karki";
+            const note = "Payment for Item";
+            const amount = "200";
+            const upiUrl= `upi://pay?pa=${upiId}&pn=${name}&am=${amount}&cu=INR&tn=${encodeURIComponent(note)}`;
+            window.location.hred=upiUrl;
+
+          }
+        </script>
+      
+
+
+
+
+
     </ul>
    </div>
      
-
+    
 
 
      <footer id="footer">
