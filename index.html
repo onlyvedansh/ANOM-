@@ -6,11 +6,11 @@
 window.addEventListener("scroll", function () {
   const nav = document.getElementById("navbar");
 
-  if (window.scrollY > 400) {
-    nav.style.top = "0px";       // 👈 stick to top
+  if (window.scrollY > 100) {
+    nav.style.top = "0px";       //  stick to top
     nav.style.opacity = "1";     // full opacity
   } else {
-    nav.style.top = "40px";      // 👈 back to initial position
+    nav.style.top = "40px";      // back to initial position
     nav.style.opacity = "0.6";   // lower opacity
   }
 });
@@ -53,6 +53,7 @@ window.addEventListener("scroll", function () {
 
         
      <li id="artist-section">
+      <div class="magicButton">All Artist</div>
       <section class="artist-wrapper">
         <ul id="profiles">
           <li><div><img src="artist/man1.webp" id="one"><p class="artist-names">Wakanda man</p><p class="caption2">Warrior       Forever</p></div></li>
@@ -68,6 +69,9 @@ window.addEventListener("scroll", function () {
 
      <li>
       <section id="highlights">
+        <div class="magicButton">
+          View All
+        </div>
         <p id="highlight-caption"><span>AKHYANI && ARTS</span> <br> <br>This is the highlights caption <br> You can check out more of the highlights <br> Click the highlight button <br> <br> <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank">"Highlights"</a></p>
         <div id="highlight">
         <img src="slider/11.jpg" id="highlight-image">
@@ -77,7 +81,7 @@ window.addEventListener("scroll", function () {
 
      <li>
       <section id="workshop">
-        <a href="workshop.html"><p>View more</p></a>
+        <a href="workshop.html"><p class="magicButton">View more</p></a>
         <ul id="collections">
           <li><div class="col1 "><img src="slider/4.jpg" alt="" id="one"></div></li>
           <li><div class="col1 "><img src="slider/5.jpg" alt="two"></div></li>
@@ -101,6 +105,9 @@ window.addEventListener("scroll", function () {
 
       <li>  
         <section id="instagram">
+          <div class="magicButton">
+           <i class="fa-brands fa-instagram"></i> view all
+          </div>
         <i class="fa-solid fa-circle-arrow-left" id="left"></i>
         <ul id="insta">  
           <li><img src="slider/12.jpg" alt=""></li>
