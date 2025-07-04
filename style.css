@@ -264,6 +264,37 @@ width: 100%;
     font-family:Helvetica ;
     font-size: 40px;
 }
+
+#workshop p
+{   
+    cursor: pointer;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 1280px;
+    position: absolute;
+    margin-top: 60px;
+    z-index: 10;
+     background: linear-gradient(to right, black 100%, transparent 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease, color 0.5s;
+    color: black;
+ 
+}
+
+#workshop p:hover 
+{
+color: aliceblue;
+background-size: 100% 100%;
+
+ 
+}
+
+
+
 #workshop
 {
    
@@ -590,10 +621,11 @@ background-color: rgba(157, 132, 102, 0.248);
     font-size: 15px;  
 }
 
-#paytm div
+#paytm #pay
 {
-    margin-left: 60px;
-    width: 30%;
+  margin-left: 0;
+  width: 150px;
+  padding-left: 0;
 }
 #founders img
 {
