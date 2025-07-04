@@ -132,6 +132,7 @@ width: 100%;
     position: relative;
     align-content: center;
     margin-top: 100px;  
+  
    
 }
 
@@ -157,8 +158,9 @@ background-size: 100% 100%;
 #artist-section .artist-wrapper ul 
 {
     display: flex;
-    gap: 100px;
+    gap: 40px;
     list-style: none;
+    margin-left: 280px;
     
 
 }
@@ -167,7 +169,7 @@ background-size: 100% 100%;
 {
     
     height: 500px;
-    width: 300px;
+    width: 200px;
     position: relative;
     
     
@@ -300,7 +302,6 @@ background-size: 100% 100%;
     width: 100px;
      height: 25px;
     padding-top: 8px;
-   
     padding-left: 20px;
     margin-left: 1280px;
     position: absolute;
@@ -320,7 +321,20 @@ background-size: 100% 100%;
 }
 
 
-
+#workshop .magicButton
+{
+    background: linear-gradient(to right, white 100%, transparent 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease, color 0.5s;
+    color: white; 
+    border: 1px solid white;
+}
+#workshop .magicButton:hover 
+{
+color: black;
+background-size: 100% 100%; 
+}
 
 #workshop
 {
@@ -339,15 +353,16 @@ background-size: 100% 100%;
     display: flex;
         list-style: none;
         gap: 60px;
-    padding-top:150px ;
+    padding-top:220px ;
     padding-left: 80px;
-    background: rgba(133, 132, 132, 0.136); /* translucent */   
+    background: rgb(0, 0, 0); /* translucent */   
+    
 }
 
 #workshop .col1 
 {
     
-background-color: rgba(157, 132, 102, 0.248);
+background-color: rgb(27, 14, 14);
  height: 400px;
  width: 400px; 
  position: relative;
@@ -364,11 +379,11 @@ background-color: rgba(157, 132, 102, 0.248);
 
 @keyframes borde {
  
-    0%{border-top: 3px solid transparent;}
-    25%{border-top: 3px solid rgb(254, 233, 164);}
-    50%{border-right: 3px solid rgba(2254, 233, 164);}
-    75%{border-bottom: 3px solid rgba(254, 233, 164);}
-    100%{border-left: 3px solid rgba(254, 233, 164);}
+    0%{border-top: 1px solid transparent;}
+    25%{border-top: 1px solid rgb(185, 172, 106);}
+    50%{border-right: 1px solid rgb(185, 172, 106);}
+    75%{border-bottom: 1px solid rgb(185, 172, 106);}
+    100%{border-left: 1px solid rgb(185, 172, 106);}
 }
 
 #workshop .col1 img
@@ -385,11 +400,13 @@ background-color: rgba(157, 132, 102, 0.248);
     width: 95%;
     height: 570px;
     margin-left: 50px;
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.273);
+    
 }
 #founders img
 {
     height: 100%;
+   
 }
 #founders p 
 {
@@ -581,7 +598,7 @@ background-color: rgba(157, 132, 102, 0.248);
     display: flex;
     gap: 10px;
     list-style: none;
-    margin-left: 25px;
+    margin-left: 20px;
 
 } 
 #profiles div .caption2
@@ -641,16 +658,16 @@ background-color: rgba(157, 132, 102, 0.248);
 
 #workshop .magicButton
 {
-    margin-left: 250px;
-    margin-top: 400px;
+    margin-left: 220px;
+    margin-top: 430px;
     
 }
 #workshop .col1 
 {
-    
-background-color: rgba(157, 132, 102, 0.248);
- height: 200px;
- width: 200px; 
+margin-left: 5px;
+
+ height: 170px;
+ width: 170px; 
  position: relative;
  overflow: hidden;
   backdrop-filter: blur(30px);
@@ -662,32 +679,32 @@ background-color: rgba(157, 132, 102, 0.248);
 {
  height: 70%;
  width: 70%;
- padding-top:30px ;
- padding-left: 30px; 
+ padding-top:25px ;
+ padding-left: 25px; 
 
 }
 #workshop #collections
 {
     height: 530px;
-    
-        gap: 10px;
+    gap: 10px;
     padding-left: 2px;
-    padding-top: 100px;
-    background: rgba(133, 132, 132, 0.203); /* translucent */   
+    padding-top: 150px;
+    /* translucent */   
 }
 #workshop #col2
 {
-    margin-left: -418px;
+    margin-left: -365px;
     margin-top: 210px;
 }
 #founders
 {
     width: 95%;
-       margin-left: 10px;  
+    margin-left: 10px;  
+   
 }
 #founders p 
 {
-    margin-left: 250px;
+    margin-left: 210px;
     margin-top: -400px;
     font-size: 15px;  
 }
@@ -711,6 +728,6 @@ background-color: rgba(157, 132, 102, 0.248);
     height: 100%;
     width: 200px;
     object-fit:cover;
-    object-position: -200px 0px;
+    object-position: -270px 0px;
 }
 }
