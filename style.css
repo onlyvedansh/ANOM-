@@ -138,8 +138,22 @@ width: 100%;
 #artist-section .magicButton
 {
     margin-left: 1380px;
-    margin-top: 20px;
+    margin-top: -70px;
+    border-color: aliceblue;
+    color: aliceblue;
+    background: linear-gradient(to right, white 100%, transparent 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease, color 0.5s;
+   
+    
 }
+#artist-section .magicButton:hover 
+{
+color: black;
+background-size: 100% 100%; 
+}
+
 #artist-section .artist-wrapper ul 
 {
     display: flex;
@@ -284,8 +298,9 @@ width: 100%;
     cursor: pointer;
     border: 1px solid black;
     width: 100px;
-    height: 40px;
-    padding-top: 20px;
+     height: 25px;
+    padding-top: 8px;
+   
     padding-left: 20px;
     margin-left: 1280px;
     position: absolute;
@@ -409,6 +424,9 @@ background-color: rgba(157, 132, 102, 0.248);
 {
     margin-top: 80px;
     margin-left: 1348px;
+    font-size: 15px;
+    width: 80px;
+    padding-left: 10px;
 }
 #instagram
 {
