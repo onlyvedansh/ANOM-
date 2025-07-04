@@ -588,7 +588,7 @@ background-color: rgba(157, 132, 102, 0.248);
 {
     color: aliceblue;
    margin-top: -150px;
-   margin-left: 10px;
+   margin-left: 6px;
    font-size: 25px;
 }
 #profiles li div .artist-names{
@@ -627,7 +627,7 @@ background-color: rgba(157, 132, 102, 0.248);
 {
 
     height: 500px;
-   width: 98%;
+     width: 98%;
     overflow: hidden;
     position: relative;
 }
@@ -641,7 +641,7 @@ background-color: rgba(157, 132, 102, 0.248);
 
 #workshop .magicButton
 {
-    margin-left: 260px;
+    margin-left: 250px;
     margin-top: 400px;
     
 }
