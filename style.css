@@ -530,6 +530,18 @@ background-color: rgba(157, 132, 102, 0.248);
   {
     width: 100%;
   }
+  .magicButton
+  {
+    font-size: 12px;
+    height: 20px;
+    width: 70px;
+    padding-top:8px ;
+  }
+  #artist-section .magicButton
+  {
+    margin-left: 310px;
+    margin-top: 20px;
+  }
    #artist-section .artist-wrapper
 {
     background-color: black;
@@ -576,6 +588,11 @@ background-color: rgba(157, 132, 102, 0.248);
     margin-left: 10px;
     margin-top: 100px;
 }
+#highlights .magicButton
+{
+    margin-top: -50px;
+    margin-left: 300px;
+}
 #highlight
 {
 
@@ -589,6 +606,13 @@ background-color: rgba(157, 132, 102, 0.248);
     object-position: -400px -200px;
     object-fit: fill;
    filter: grayscale(.5);
+    
+}
+
+#workshop .magicButton
+{
+    margin-left: 260px;
+    margin-top: 400px;
     
 }
 #workshop .col1 
@@ -638,11 +662,19 @@ background-color: rgba(157, 132, 102, 0.248);
     font-size: 15px;  
 }
 
+#instagram
+{
+
+}
+#instagram .magicButton
+{
+    margin-left: 310px;
+}
 #paytm #pay
 {
-  margin-left: 0;
+  margin-left: 150px;
   width: 150px;
-  padding-left: 0;
+  padding-left: 10px;
 }
 #founders img
 {
