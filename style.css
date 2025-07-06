@@ -761,20 +761,50 @@ background-color: rgba(0, 0, 0, 0.108);
 
 #insta
 {
+ 
    box-shadow: 0px 10px 40px 0px;
    flex-direction: column;
    display: flex;
-   overflow: hidden;
+   overflow-x: hidden;
    height: 330px;
    width: 300px;
-   margin-top:160px;
+   margin-top:150px;
    margin-left: 20px;
+    scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+  
+}
+#insta li {
+  scroll-snap-align: start;
+}
+
+#insta::-webkit-scrollbar {
+  display: none; /* hide scrollbar in Chrome */
+}
+#instagram::after 
+{
+    content: "Scroll";
+    position: absolute;
+    margin-top: 550px;
+    left: 160px;
+    animation: float 1s infinite;
+    transform-origin: bottom center;
+    color: rgb(107, 107, 107);
+
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 #instagram #insta li  img 
 {
+   
    height: 355px;
-   margin-top: -30px;
+   margin-top: 0px;
    margin-left: -5px;
    width: 310px;
     object-fit: fill;
@@ -786,14 +816,10 @@ background-color: rgba(0, 0, 0, 0.108);
 }
 
 
-#instagram #insta #right 
-{
-    position:relative;
-}
-#instagram #insta #left 
-{
-    position:relative;
-}
+ #insta li:nth-child(1),
+  #insta li:nth-child(6) {
+    display: none;
+  }
 
 #instagram .magicButton
 {
