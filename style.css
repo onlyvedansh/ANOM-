@@ -578,7 +578,7 @@ transition: .5s ease;
 
 
 
-@media (max-width: 400px) and (min-width:363px)
+@media (max-width: 500px) and (min-width:363px)
 {
   #navbar {
     font-size: 10px;
