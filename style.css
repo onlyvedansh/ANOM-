@@ -578,7 +578,7 @@ transition: .5s ease;
 
 
 
-@media (max-width: 760px) and (min-width:363px)
+@media (max-width: 400px) and (min-width:363px)
 {
   #navbar {
     font-size: 10px;
@@ -754,11 +754,41 @@ margin-left: 5px;
 
 #instagram
 {
-
+border: 1px solid black;
 }
+#insta
+{
+    border:1px solid black;
+   margin-top: 55px;
+   width: 90%;
+   
+   
+}
+
+#instagram #insta li 
+{
+    height: 100%;
+    width:100%;
+}
+
+#instagram #insta li 
+{
+    height: 100%;
+    width: 100%;
+}
+
+#instagram #insta #right 
+{
+    position:absolute;
+}
+#instagram #insta #left 
+{
+    position:absolute;
+}
+
 #instagram .magicButton
 {
-    margin-left: 270px;
+    margin-left: 250px;
 }
 #paytm #pay
 {
