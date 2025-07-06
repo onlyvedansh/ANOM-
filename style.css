@@ -282,7 +282,6 @@ background-size: 100% 100%;
     position: absolute;
     font-size: 15px;
     font-family: Georgia ;
-
 }
 #highlight-caption a
 {
@@ -578,15 +577,12 @@ transition: .5s ease;
 
 
 
-@media (max-width: 500px) and (min-width:363px)
+@media (max-width: 380px) and (min-width:363px)
 {
   #navbar {
     font-size: 10px;
     height: 60px;
-    z-index: 100;
- 
-    
-    
+    z-index: 100;   
   }
   nav ul
   {
@@ -671,7 +667,6 @@ transition: .5s ease;
     width: 100px;
     position: relative;
     
-    
 }
 #highlights
 {
@@ -708,7 +703,6 @@ transition: .5s ease;
 #workshop .col1 
 {
 margin-left: 5px;
-
  height: 170px;
  width: 170px; 
  position: relative;
@@ -732,7 +726,6 @@ margin-left: 5px;
     gap: 10px;
     padding-left: 2px;
     padding-top: 150px;
-    /* translucent */   
 }
 #workshop #col2
 {
@@ -761,7 +754,6 @@ background-color: rgba(0, 0, 0, 0.108);
 
 #insta
 {
- 
    box-shadow: 0px 10px 40px 0px;
    flex-direction: column;
    display: flex;
@@ -842,4 +834,211 @@ background-color: rgba(0, 0, 0, 0.108);
     object-fit:cover;
     object-position: -270px 0px;
 }
+
+}
+@media (max-width: 363px)
+{
+    
+  #navbar {
+    font-size: 10px;
+    height: 40px;
+    z-index: 100;      
+  }
+  nav ul 
+  {
+    padding-top: 16px;
+    gap: 25px;
+    padding-left: 200px;
+  }
+    .magicButton
+  {
+    font-size: 12px;
+    height: 20px;
+    width: 70px;
+    padding-top:8px ;
+  }
+   #artist-section .magicButton
+  {
+    margin-top: -50px;
+    margin-left: 240px;
+    color: aliceblue;
+    border: 1px solid white;
+  }
+#artist-section .artist-wrapper ul 
+{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-left: 20px;
+} 
+#profiles li div 
+{
+    
+    height: 500px;
+    width: 100px;
+    position: relative;
+}
+.phn-only
+{
+    display: none;
+}
+#profiles div .caption2
+{
+   color: aliceblue;
+   margin-top: -160px;
+   margin-left: 6px;
+   font-size: 25px;
+}
+#profiles li div .artist-names{
+    color: aliceblue;
+    padding-left: 10px;
+    padding-top: 10px;   
+}
+#highlights
+{
+    margin-left: 10px;
+    margin-top: 100px;
+}
+#highlights .magicButton
+{
+    margin-top: -60px;
+      margin-left: 250px;
+}
+#highlight
+{
+    height: 500px;
+     width: 98%;
+    overflow: hidden;
+    position: relative;
+}
+#highlight-image
+{
+    object-position: -400px -300px;
+    object-fit: fill;
+   filter: grayscale(.5);
+}
+#highlight-caption
+{
+    margin-left: 100px;
+}
+#workshop .magicButton
+{
+    margin-left: 220px;
+    margin-top: 430px; 
+}
+#workshop .col1 
+{
+margin-left: 5px;
+ height: 170px;
+ width: 170px; 
+ position: relative;
+ overflow: hidden;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(20px); /* for Safari */
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+#workshop .col1 img
+{
+ height: 70%;
+ width: 70%;
+ padding-top:25px ;
+ padding-left: 25px; 
+}
+#workshop #collections
+{
+    height: 530px;
+    gap: 10px;
+    padding-left: 2px;
+    padding-top: 150px;
+}
+#workshop #col2
+{
+    margin-left: -365px;
+    margin-top: 210px;
+}
+#founders
+{
+    
+ margin-left: 10px;
+ width: 95%;
+ overflow-x: hidden;   
+}
+#founders img 
+{
+    object-position: -230px 0px;
+    width: 55%;
+    object-fit: cover;
+}
+#founders p 
+{
+    margin-left: 210px;
+    margin-top: -400px;
+    font-size: 15px;  
+}
+#instagram
+{
+height: 620px;
+background-color: rgba(0, 0, 0, 0.108);
+}
+
+#insta
+{
+   box-shadow: 0px 10px 40px 0px;
+   flex-direction: column;
+   display: flex;
+   overflow-x: hidden;
+   height: 330px;
+   width: 300px;
+   margin-top:150px;
+   margin-left: 20px;
+    scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+}
+#insta li {
+  scroll-snap-align: start;
+}
+#insta::-webkit-scrollbar {
+  display: none; /* hide scrollbar in Chrome */
+}
+#instagram #insta li  img 
+{  
+   height: 355px;
+   margin-top: 0px;
+   margin-left: -5px;
+   width: 310px;
+    object-fit: fill;
+}
+ #insta li:nth-child(1),
+  #insta li:nth-child(6) {
+    display: none;
+  }
+  #instagram .magicButton
+{
+    margin-left: 230px;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-top:5px;
+    width: 70px;
+}
+
+#instagram::after 
+{
+    content: "Scroll";
+    position: absolute;
+    margin-top: 550px;
+    left: 160px;
+    animation: float 1s infinite;
+    transform-origin: bottom center;
+    color: rgb(107, 107, 107);
+
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 }
