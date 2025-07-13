@@ -30,7 +30,7 @@ background-color: black;
 height: 100px;
 width: 100%;
 box-shadow: 0px 50px 100px 0px;
- z-index: 1;
+ z-index: 70;
  user-select: none;
 }
 
@@ -138,7 +138,7 @@ width: 100%;
 
 #artist-section .magicButton
 {
-    margin-left: 1300px;
+   margin-left:70px;
     margin-top: -140px;
     border-color: aliceblue;
     color: aliceblue;
@@ -249,7 +249,7 @@ background-size: 100% 100%;
 #highlights .magicButton
 {
     margin-top: -80px;
-    margin-left: 1220px;
+    margin-left:0px;
 }
 #highlights
 {
@@ -321,7 +321,7 @@ background-size: 100% 100%;
 
 
 #workshop .magicButton
-{
+{   margin-left:80px;
     background: linear-gradient(to right, white 100%, transparent 100%);
     background-size: 0% 100%;
     background-repeat: no-repeat;
@@ -676,7 +676,7 @@ transition: .5s ease;
 #highlights .magicButton
 {
     margin-top: -60px;
-      margin-left: 250px;
+      margin-left: 10px;
 }
 #highlight
 {
@@ -832,6 +832,7 @@ background-color: rgba(0, 0, 0, 0.108);
     height: 100%;
     width: 200px;
     object-fit:cover;
+    display: block;
     object-position: -270px 0px;
 }
 
@@ -839,6 +840,10 @@ background-color: rgba(0, 0, 0, 0.108);
 @media (max-width: 363px)
 {
     
+    #slider
+    {
+        object-position: -800px 0px;
+    }
   #navbar {
     font-size: 10px;
     height: 40px;
@@ -860,7 +865,7 @@ background-color: rgba(0, 0, 0, 0.108);
    #artist-section .magicButton
   {
     margin-top: -50px;
-    margin-left: 240px;
+    margin-left: 18px;
     color: aliceblue;
     border: 1px solid white;
   }
@@ -902,7 +907,7 @@ background-color: rgba(0, 0, 0, 0.108);
 #highlights .magicButton
 {
     margin-top: -60px;
-      margin-left: 250px;
+      margin-left: 10px;
 }
 #highlight
 {
@@ -923,8 +928,8 @@ background-color: rgba(0, 0, 0, 0.108);
 }
 #workshop .magicButton
 {
-    margin-left: 220px;
-    margin-top: 430px; 
+    margin-left: 10px;
+    margin-top: 50px; 
 }
 #workshop .col1 
 {
@@ -968,7 +973,9 @@ margin-left: 5px;
 {
     object-position: -230px 0px;
     width: 55%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 #founders p 
 {
@@ -989,7 +996,7 @@ background-color: rgba(0, 0, 0, 0.108);
    display: flex;
    overflow-x: hidden;
    height: 330px;
-   width: 300px;
+   width: 80%;
    margin-top:150px;
    margin-left: 20px;
     scroll-snap-type: y mandatory;
@@ -1009,6 +1016,7 @@ background-color: rgba(0, 0, 0, 0.108);
    margin-left: -5px;
    width: 310px;
     object-fit: fill;
+    object-position: -20px 0px;
 }
  #insta li:nth-child(1),
   #insta li:nth-child(6) {
@@ -1016,8 +1024,8 @@ background-color: rgba(0, 0, 0, 0.108);
   }
   #instagram .magicButton
 {
-    margin-left: 230px;
-    margin-top: 100px;
+    margin-left: 18px;
+    margin-top: 70px;
     padding-left: 20px;
     padding-top:5px;
     width: 70px;
@@ -1040,5 +1048,68 @@ background-color: rgba(0, 0, 0, 0.108);
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
+
+}
+
+
+
+@media (min-width:381px) and (max-width:1456px)
+{
+   #highlight
+    {
+        width: 95%;
+    }
+   
+}
+
+@media (min-width:381px) and (max-width:990px)
+{
+       #artist-section .artist-wrapper ul
+
+       {
+        margin-left: 20px;
+       }
+}
+  
+@media (min-width:381px) and (max-width:733px)
+{
+           #artist-section .artist-wrapper ul
+            {
+                gap: 10px;
+                
+            }
+            #profiles li div 
+            {
+                width: 170px;
+            }
+   #profiles li div .artist-names{
+
+    padding-left: 20px;
+}
+
+
+}
+
+
+
+@media (min-width:1098px) and (max-width:1246px) 
+{
+     #artist-section .artist-wrapper ul
+     {
+       
+       margin-left: 10%;
+       
+     }
+
+}
+@media (min-width:991px) and (max-width:1098px) 
+{
+     #artist-section .artist-wrapper ul
+     {
+       
+      margin-left: 5%;
+       
+       
+     }
 
 }
