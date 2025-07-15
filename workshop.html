@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="workshop.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="top">
+        ANOM
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() 
+        {
+     const top = document.getElementById('top');
+  
+      if (window.scrollY > 60) {
+        top.style.top = '0px';
+        top.style.fontSize = '2em';
+        } else {
+             top.style.top = '400px';
+            top.style.fontSize = '4em';
+            }
+         });
+
+    </script>
+
+
+ 
+
+    <div id="images">
+        <ul class="fadeIn-images">
+            <li><img src="slider/1.jpg" alt="image"></li>
+            <li><img src="slider/1.jpg" alt="image"></li>
+            <li><img src="slider/1.jpg" alt="image"></li>
+            <li><img src="slider/1.jpg" alt="image"></li>
+            <li><img src="slider/1.jpg" alt="image"></li>
+        </ul>
+    </div>
+
+    <script>
+         window.addEventListener('scroll', function() 
+        {
+     const one = document.querySelector('fadeIn-images');
+  
+      if (window.scrollY > 60) {
+        top.style.top = '0px';
+        top.style.fontSize = '2em';
+        } else {
+             top.style.top = '400px';
+            top.style.fontSize = '4em';
+            }
+         });
+    </script>
+
+
+    <div>hie</div>
+    <div>bye</div>
+    <div>hello</div>
+    <div>hie</div>
+    <div>bye</div>
+    <div>hello</div>
+    <div>hie</div>
+    <div>bye</div>
+    <div>hello</div>
+    <div>hie</div>
+    <div>bye</div>
+    <div>hello</div>
+    <div>hie</div>
+    <div>bye</div>
+    <div>hello</div>
+    <div>hie</div>
+    <div>bye</div>
 </body>
 </html>

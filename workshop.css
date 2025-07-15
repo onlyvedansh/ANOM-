@@ -1,0 +1,66 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+   
+    
+    
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#top
+{
+    color: white;
+    position: fixed;
+    top: 400px;
+    font-size: 4em;
+      transition: all 0.3s ease;
+      
+    
+
+}
+.fadeIn-images
+{
+    animation: fadeIn 1s  ease-in;
+}
+.magicFont
+{
+    animation: fadeIn 3s ease-in-out infinite alternate;
+    color: rgb(107, 106, 106);
+    font-size: 1em;
+   
+}
+#images ul li 
+{
+   width: 100%;
+    
+    object-fit: contain;
+    overflow: hidden;
+
+}
+#images ul 
+{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0%;
+}
+#images ul li img
+{
+    width: 100%;
+}
