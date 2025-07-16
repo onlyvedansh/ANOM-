@@ -176,7 +176,7 @@ background-size: 100% 100%;
 }
 #profiles li div .artist-names{
     color: aliceblue;
-    padding-left: 90px;
+    padding-left: 50px;
     padding-top: 10px;
     
 }
@@ -207,7 +207,7 @@ background-size: 100% 100%;
 {
     color: aliceblue;
    margin-top: -150px;
-   margin-left: 20px;
+   margin-left: 15px;
    font-size: 25px;
 }
 #profiles li div img
