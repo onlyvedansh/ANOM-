@@ -5,10 +5,59 @@
 }
 body
 {
-  align-items: center;
-  align-content:center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 244, 233);
+    gap:300px;
+    font-family: "Bodoni Moda", serif;
+     font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.magicButton
+{   user-select: none;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100px;
+    height: 40px;
+    margin-top: 420px;
+   margin-left: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    position: absolute;
+    font-size:1em ;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(255, 255, 255) 100%, transparent 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease, color 0.5s;
+    color: rgb(255, 255, 255);
+}
 
+.magicButton:hover 
+{
+color: rgb(0, 0, 0);
+background-size: 100% 100%; 
+}
 
+nav 
+{
+    
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    background:linear-gradient(to right , rgb(255, 255, 255) , rgb(96, 96, 96));
+    margin-top: 0;
+    padding-left: 200px;
+    padding-top: 20px; box-sizing: border-box;
+   position: fixed;
+}
+#logo
+{
+   position: absolute;
+   margin-left: -180px;
+  
+   
 }
 
 @keyframes fadeIn {
@@ -18,17 +67,23 @@ body
 
 #top
 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     position: fixed;
-    top: 600px;
+    top: 100px;
     font-size: 6em;
     transition: all 0.3s ease;
     z-index: 10;
-  
-      
-    
+    margin-left: 39%;
+    visibility: hidden;
+}
+#nav ul
+{
+    display: flex;
+    gap: 30px;
+    list-style:none;
 
 }
+
 .fadeIn-images
 {
     animation: fadeIn 1s  ease-in;
@@ -41,12 +96,98 @@ body
    
 }
 
-
-#imgs ul li img
+#imgs ul 
 {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+#imgs ul li 
+{
+    background-color: blueviolet;
+    overflow: hidden;
+    
+}
+
+#imgs ul li img 
+{
+    object-fit: cover;
     height: 100%;
+    width: 50%;
+}
+
+#cat1 p
+{
+      color: rgba(255, 255, 255, 0.726);
+      font-size: 2em;
+      margin-left: 20px;
+}
+
+#cat1
+{
+      background: linear-gradient(to right, rgb(159, 65, 18), rgb(11, 11, 28));
+      width: 100%;
+      height: 600px;
+     align-content: center;
+     margin-top: 100px;
+     
   
-    
-    
+}
+#cat1 ul 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 20px;
+}
+#cat1 ul li 
+{
+    overflow: hidden;
+    height: 400px; width:480px;
+  
+}
+#cat1 ul li img
+{
+   object-fit: cover;
+    height: 100%;
+    width: 100%;
+   
+}
+
+#cat2 p
+{
+      color: rgba(255, 255, 255, 0.726);
+      font-size: 2em;
+      margin-left: 20px;
+}
+
+#cat2
+{
+      background-color: rgb(72, 64, 33);
+      width: 100%;
+      height: 600px;
+     align-content: center;
+     
+  
+}
+#cat2 ul 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 20px;
+}
+#cat2 ul li 
+{
+    overflow: hidden;
+    height: 400px; width:480px;
+  
+}
+#cat2 ul li img
+{
+   object-fit: cover;
+    height: 100%;
+    width: 100%;
+   
 }
