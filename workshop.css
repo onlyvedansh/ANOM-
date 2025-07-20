@@ -72,6 +72,19 @@ body
     position: absolute;
     visibility: hidden;
 }
+#forgot
+{
+     position: relative;
+    border: 1px solid white;
+    height: 600px; width: 700px;
+    z-index: 202; margin-top: 3%;
+    background-color: rgba(134, 121, 121, 0.125);
+    backdrop-filter: blur(5px);
+    border-radius: 10%;
+    margin-left: 30%;
+   color: #f0f8ff;
+    text-align: center;
+}
 #signup
 {
     position: relative;

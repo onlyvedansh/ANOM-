@@ -21,8 +21,8 @@
     <input type="text" name="username" id="username" placeholder="Username or Email">
     <input type="password" name="password" id="password" placeholder=" Password"> <br>
     <button type="submit" id="submit" class="">Submit</button> <br> <br> <br>
-    <a href="" id="goToSignup"><p>Forgot Password</p> </a>  
-    <a href="" id="goToForgot"><p>Sign In</p></a>
+    <a href="#" id="goToForgot"><p>Forgot Password</p> </a>  
+    <a href="#" id="goToSignup"><p>Sign In</p></a>
   </form>
 
   <form id="signup">
@@ -33,35 +33,70 @@
     <input type="text" name="email" id="email" placeholder="email">
     <input type="number" name="phno" id="phno" placeholder="Phone number">
     <input type="date" name="dob" id="dob">
+    <button class="back" type="button">back</button>
   </form>
 
   <form id="forgot">
   <input type="text" placeholder="Enter your email">
   <button type="submit">Reset Password</button>
-  <button  class="back">back</button>
+  <button  class="back" type="button">back</button>
 </form>
 
 <script>
-  function showForm(formToShow) {
-    // Hide all forms
-    document.getElementById("login").style.display = "none";
-    document.getElementById("signup").style.display = "none";
-    document.getElementById("forgot").style.display = "none";
-    document.getElementsByClassName("back").style.display="none";
+    
+function showForm(formId) {
+  ["login","signup","forgot"].forEach(id =>
+    document.getElementById(id).style.display = "none"
+  );
+  document.getElementById(formId).style.display = "block";
+}
 
-    // Show the selected form
-    document.getElementById(formToShow).style.display = "block";
+// hook up your links
+document.getElementById("goToSignup")
+        .addEventListener("click", e => { e.preventDefault(); showForm("signup") });
+
+document.getElementById("goToForgot")
+        .addEventListener("click", e => { e.preventDefault(); showForm("forgot") });
+let formHistory = ["login"]; // default form
+const forms = ["login", "signup", "forgot"];
+
+function showForm(formId) {
+  // Hide all
+  forms.forEach(id => document.getElementById(id).style.display = "none");
+
+  // Show target
+  document.getElementById(formId).style.display = "block";
+
+  // Push if new
+  if (formHistory[formHistory.length - 1] !== formId) {
+    formHistory.push(formId);
   }
+}
 
-  document.getElementById("goToSignup").addEventListener("click", function(e) {
-    e.preventDefault();
-    showForm("signup");
-  });
+// Navigation links
+document.getElementById("goToSignup").addEventListener("click", (e) => {
+  e.preventDefault();
+  showForm("signup");
+});
 
-  document.getElementById("goToForgot").addEventListener("click", function(e) {
-    e.preventDefault();
-    showForm("forgot");
+document.getElementById("goToForgot").addEventListener("click", (e) => {
+  e.preventDefault();
+  showForm("forgot");
+});
+
+// Handle all .back buttons
+document.querySelectorAll(".back").forEach(btn => {
+  btn.addEventListener("click", () => {
+    if (formHistory.length > 1) {
+      formHistory.pop(); // remove current
+      const prevForm = formHistory[formHistory.length - 1];
+      showForm(prevForm);
+    }
   });
+});
+
+
+      
 </script>
 
 </div>
