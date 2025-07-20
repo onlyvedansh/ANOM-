@@ -16,7 +16,7 @@
 <div id="logIN">  
   <img src="slider/5.jpg" alt="" class="bg">
 
-  <form id="login">
+  <form id="login"  action="login.php" method="POST">
     <img src="LOGO.png" id="logoo"> 
     <input type="text" name="username" id="username" placeholder="Username or Email">
     <input type="password" name="password" id="password" placeholder=" Password"> <br>
@@ -24,8 +24,26 @@
     <a href="#" id="goToForgot"><p>Forgot Password</p> </a>  
     <a href="#" id="goToSignup"><p>Sign In</p></a>
   </form>
+  <script>
+    document.getElementById("login").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent default page reload
 
-  <form id="signup">
+  const formData = new FormData(this);
+
+  fetch("login.php", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    alert(data); // Show response (success/failure)
+    // You can also update DOM or redirect based on `data`
+  });
+});
+
+  </script>
+
+  <form id="signup" action="signup.php" method="POST">
     
     <input type="text" name="first-name" id="first-name" placeholder="email">
     <input type="text" name="middle-name" id="middle-name" placeholder="email">
@@ -34,8 +52,26 @@
     <input type="number" name="phno" id="phno" placeholder="Phone number">
     <input type="date" name="dob" id="dob">
     <button class="back" type="button">back</button>
+    <input type="text" name="" id="password-sign" placeholder="password">
+    <button type="submit">Sign Up</button>
   </form>
+<script>
+    document.getElementById("signup").addEventListener("submit", function (e) {
+  e.preventDefault(); // Stop page reload
 
+  const formData = new FormData(this);
+
+  fetch("signup.php", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    alert(data); // Show response
+  });
+});
+
+</script>
   <form id="forgot">
   <input type="text" placeholder="Enter your email">
   <button type="submit">Reset Password</button>
