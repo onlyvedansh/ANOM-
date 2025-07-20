@@ -20,9 +20,9 @@
     <img src="LOGO.png" id="logoo"> 
     <input type="text" name="username" id="username" placeholder="Username or Email">
     <input type="password" name="password" id="password" placeholder=" Password"> <br>
-    <button type="submit" id="submit" class="">Submit</button> <br> <br> 
-    <a href=""><p>Forgot Password</p> </a> 
-    <a href=""><p>Sign up</p></a>
+    <button type="submit" id="submit" class="">Submit</button> <br> <br> <br>
+    <a href="" id="goToSignup"><p>Forgot Password</p> </a>  
+    <a href="" id="goToForgot"><p>Sign In</p></a>
   </form>
 
   <form id="signup">
@@ -34,6 +34,35 @@
     <input type="number" name="phno" id="phno" placeholder="Phone number">
     <input type="date" name="dob" id="dob">
   </form>
+
+  <form id="forgot">
+  <input type="text" placeholder="Enter your email">
+  <button type="submit">Reset Password</button>
+  <button  class="back">back</button>
+</form>
+
+<script>
+  function showForm(formToShow) {
+    // Hide all forms
+    document.getElementById("login").style.display = "none";
+    document.getElementById("signup").style.display = "none";
+    document.getElementById("forgot").style.display = "none";
+    document.getElementsByClassName("back").style.display="none";
+
+    // Show the selected form
+    document.getElementById(formToShow).style.display = "block";
+  }
+
+  document.getElementById("goToSignup").addEventListener("click", function(e) {
+    e.preventDefault();
+    showForm("signup");
+  });
+
+  document.getElementById("goToForgot").addEventListener("click", function(e) {
+    e.preventDefault();
+    showForm("forgot");
+  });
+</script>
 
 </div>
     <script>
@@ -90,6 +119,16 @@
         <li><img src="slider/13.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
     </ul>
 </div>
+<script>
+  setTimeout(function () {
+    const logIN = document.getElementById("logIN");
+    const logoo = document.getElementById("logoo");
+    const bg = document.querySelector("#logIN .bg");
 
+    logIN.classList.add("show");
+    logoo.classList.add("show");
+    if (bg) bg.classList.add("show");
+  }, 5000);
+</script>
 </body>
 </html>
