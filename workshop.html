@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Michroma&display=swap" rel="stylesheet">
@@ -11,10 +12,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="top">
-        <span>V</span>NOM
-    </div>
 
+<div id="logIN">  
+  <img src="slider/5.jpg" alt="" class="bg">
+
+  <form id="login">
+    <img src="LOGO.png" id="logoo"> 
+    <input type="text" name="username" id="username" placeholder="Username or Email">
+    <input type="password" name="password" id="password" placeholder=" Password"> <br>
+    <button type="submit" id="submit" class="">Submit</button> <br> <br> 
+    <a href=""><p>Forgot Password</p> </a> 
+    <a href=""><p>Sign up</p></a>
+  </form>
+
+  <form id="signup">
+    
+    <input type="text" name="first-name" id="first-name" placeholder="email">
+    <input type="text" name="middle-name" id="middle-name" placeholder="email">
+    <input type="surname" name="surname" id="surname">
+    <input type="text" name="email" id="email" placeholder="email">
+    <input type="number" name="phno" id="phno" placeholder="Phone number">
+    <input type="date" name="dob" id="dob">
+  </form>
+
+</div>
     <script>
         window.addEventListener('scroll', function() 
         {
@@ -43,25 +64,30 @@
                 <li><p>Weddings</p></li>
     </ul>
   </div>
-
+  <i class="fa-solid fa-right-from-bracket"> <div class="tooltip">Log out</div></i>
+<i class="fa-regular fa-user"><div class="tooltip">Sign  in</div></i>
 </nav>
 
 <div id="cat1">
     <p>Top Rated </p>
     <button class="magicButton"> View All</button>
     <ul>
-        <li><img src="slider/2.jpg" alt="Candel"></li>
-                <li><img src="slider/4.jpg" alt="Candel and a flower pot"></li>
-        <li><img src="slider/12.jpg" alt="Flower pot"></li>
+        <li><img src="slider/2.jpg" alt=""> <p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
+        <li><img src="slider/1.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
+        <li><img src="slider/9.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
+        <li><img src="slider/4.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
+        <li><img src="slider/12.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
     </ul>
 </div>
 
 <div id="cat2">
     <p>NEW</p>
     <ul>
-        <li><img src="slider/11.jpg" alt="Candel"></li>
-        <li><img src="slider/9.jpg" alt="Candel and a flower pot"></li>
-        <li><img src="slider/7.jpg" alt="Flower pot"></li>
+       <li><img src="slider/11.jpg" alt=""> <p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
+        <li><img src="slider/5.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
+        <li><img src="slider/7.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
+        <li><img src="slider/8.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
+        <li><img src="slider/13.jpg" alt=""><p>$20</p><i class="fa-solid fa-cart-shopping"><div class="tooltip"> Shop now</div></i></li>
     </ul>
 </div>
 

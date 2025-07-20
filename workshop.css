@@ -8,7 +8,7 @@ body
     display: flex;
     flex-direction: column;
     background-color: rgb(252, 244, 233);
-    gap:300px;
+    gap:200px;
     font-family: "Bodoni Moda", serif;
      font-optical-sizing: auto;
     font-weight: 400;
@@ -34,12 +34,141 @@ body
     color: rgb(255, 255, 255);
 }
 
+#logIN
+{
+    height: 100%; width: 100%;
+    z-index: 100; 
+    visibility: visible;
+    position: fixed;
+    background-color: #333;
+}
+#logIN .bg 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%; object-fit: cover;
+    visibility: visible;
+    z-index: 101;
+}
+#logoo
+{
+    height: 20px; width:300px;
+   margin-top: 170px;
+    position: absolute;
+    visibility: hidden;
+}
+#signup
+{
+    position: relative;
+    border: 1px solid white;
+    height: 600px; width: 700px;
+    z-index: 202; margin-top: 3%;
+    background-color: rgba(134, 121, 121, 0.125);
+    backdrop-filter: blur(5px);
+    border-radius: 10%;
+    margin-left: 30%;
+   color: #f0f8ff;
+    text-align: center;
+    visibility: visible;
+}
+#login 
+{
+    position: relative;
+    border: 1px solid white;
+    height: 600px; width: 700px;
+    z-index: 201; margin-top: 3%;
+    background-color: rgba(134, 121, 121, 0.125);
+    backdrop-filter: blur(5px);
+    border-radius: 10%;
+    margin-left: 30%;
+   color: #f0f8ff;
+    text-align: center;
+    visibility:     hidden;
+   
+}
+#login a 
+{
+    text-decoration: none;
+    color: #f0f8ff;
+}
+a:hover 
+{
+    opacity: 50%;
+}
+button:hover 
+{
+    opacity: 50%;
+}
+#login input
+{
+      background-color: rgba(134, 121, 121, 0.125);
+      backdrop-filter: blur(5px);
+      border: 0;
+       color: #f0f8ff;
+       
+       
+}
+#username 
+{
+    height: 30px; width: 500px;
+    margin-top: 100px;
+    color: #f0f8ff;
+    margin-top: 200px;
+   
+
+}
+#password
+{
+     height: 30px; width: 500px;
+    margin-top: 10px;
+    color: #f0f8ff;
+
+}
+#submit
+{
+      background-color: rgba(134, 121, 121, 0.125);
+      backdrop-filter: blur(5px);
+      border: 0;
+     height: 30px; width: 200px;
+    margin-top: 10px;
+    color: #f0f8ff;
+    cursor: pointer;
+}
+
+
 .magicButton:hover 
 {
 color: rgb(0, 0, 0);
 background-size: 100% 100%; 
 }
 
+.tooltip {
+    font-family: 'Courier New', Courier, monospace;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 10px;
+  width: 5em;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+  margin-left: -30px;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+nav ul li 
+{
+    cursor: pointer;
+}
+nav ul li:hover 
+{
+    color: rgb(35, 82, 35);
+}
 nav 
 {
     
@@ -50,12 +179,34 @@ nav
     margin-top: 0;
     padding-left: 200px;
     padding-top: 20px; box-sizing: border-box;
-   position: fixed;
+    position: fixed;
+    z-index: 50;
+}
+nav i:nth-child(4)
+{
+    position: absolute;
+    margin-left: 84%;
+    font-size: 20px;
+    margin-top:-25px;
+    cursor: pointer;
+}
+i:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+nav i:nth-child(3)
+{
+    position: absolute;
+    margin-left: 81%;
+    font-size: 20px;
+    margin-top:-25px;
+    cursor: pointer;
 }
 #logo
 {
    position: absolute;
    margin-left: -180px;
+
   
    
 }
@@ -74,7 +225,7 @@ nav
     transition: all 0.3s ease;
     z-index: 10;
     margin-left: 39%;
-    visibility: hidden;
+    
 }
 #nav ul
 {
@@ -115,24 +266,59 @@ nav
     object-fit: cover;
     height: 100%;
     width: 50%;
+
+    
+    
+}
+#cat1 ul li i 
+{
+    color: #f0f8ff;
+    font-size:20px;
+    margin-left:-30px;
+    margin-top:10px;
+    position: absolute;
+    opacity: 0;
+    transition:  0.7s ease;
+    cursor: pointer;
 }
 
+
+#cat1 ul li:hover i {
+   opacity: 1;   
+}
+#cat1 ul li:hover p {
+   opacity: 1;   
+}
+
+#cat1 ul li img:hover
+{
+    filter: brightness(40%);
+
+      
+}
 #cat1 p
 {
       color: rgba(255, 255, 255, 0.726);
       font-size: 2em;
-      margin-left: 20px;
+      margin-left: 50px;
 }
 
 #cat1
 {
-      background: linear-gradient(to right, rgb(159, 65, 18), rgb(11, 11, 28));
+      background: linear-gradient(to right, rgb(127, 55, 19), rgb(11, 11, 28));
       width: 100%;
       height: 600px;
      align-content: center;
      margin-top: 100px;
      
   
+}
+#cat1 ul li p 
+{
+    position: absolute;
+    margin-top:-150px;
+    margin-left:90px;
+    opacity: 0;
 }
 #cat1 ul 
 {
@@ -144,7 +330,7 @@ nav
 #cat1 ul li 
 {
     overflow: hidden;
-    height: 400px; width:480px;
+    height: 400px; width:280px;
   
 }
 #cat1 ul li img
@@ -190,4 +376,45 @@ nav
     height: 100%;
     width: 100%;
    
+}
+    
+
+#cat2 ul li i 
+{
+    color: #f0f8ff;
+    font-size:20px;
+    margin-left:-30px;
+    margin-top:10px;
+    position: absolute;
+    opacity: 0;
+    transition:  0.7s ease;
+    cursor: pointer;
+}
+
+
+#cat2 ul li:hover i {
+   opacity: 1;   
+}
+#cat2 ul li:hover p {
+   opacity: 1;   
+}
+
+#cat2 ul li:hover img
+{
+    filter: brightness(40%);
+
+      
+}
+
+
+
+#cat2 ul li p 
+{
+    color: rgba(255, 255, 255, 0.726);
+      font-size: 2em;
+      margin-left: 50px;
+    position: absolute;
+    margin-top:-150px;
+    margin-left:90px;
+    opacity: 0;
 }
